@@ -1,4 +1,4 @@
-//= require signature_pad
+//= require signature_pad.umd.min.js
 
 document.addEventListener('DOMContentLoaded', function(){
   const canvas = document.getElementById("JohnHancock-canvas");
