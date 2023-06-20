@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     function resizeCanvas() {
-      var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+      let ratio =  Math.max( 1, 1);
       canvas.width = canvas.offsetWidth * ratio;
       canvas.height = canvas.offsetHeight * ratio;
       canvas.getContext("2d").scale(ratio, ratio);
@@ -24,3 +24,9 @@ document.addEventListener('DOMContentLoaded', function(){
     resizeCanvas();
   }
 }, false)
+
+function signatureClear() {
+  let canvas = document.getElementById("JohnHancock-canvas");
+  let context = canvas.getContext("2d");
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}
